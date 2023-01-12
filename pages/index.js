@@ -1,5 +1,4 @@
 import Head from "next/head";
-import { Inter } from "@next/font/google";
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import {
   AiFillTwitterCircle,
@@ -9,10 +8,7 @@ import {
 import Image from "next/image";
 import kimanipic from "../public/kimani.png";
 import design from "../public/design.png";
-import code from "../public/code.png";
-import consulting from "../public/consulting.png";
-
-const inter = Inter({ subsets: ["latin"] });
+import vid1 from "../public/synix.mp4";
 
 export default function Home() {
   return (
@@ -154,11 +150,86 @@ export default function Home() {
 
         <section>
           <div>
-            <h3 className="text-3xl py-1">My Work</h3>
+            <h1 className="text-3xl py-1">My Work</h1>
+            <h2 className="text-gray-500 text-2xl text-center">
+              Brand Partnerships
+            </h2>
 
+            <div className="mt-5 shadow-lg rounded-xl">
+              <p className="text-teal-500 text-center py-1">1.Synix</p>
+              <video
+                controls
+                className="w-full h-full mt-10 shadow-lg rounded-xl"
+              >
+                <source src={vid1} type="video/mp4" />
+              </video>
+            </div>
 
+            <div className="mt-5 shadow-lg rounded-xl">
+              <p className="text-teal-500 text-center py-1">2.Gordons Gin</p>
+              <video
+                controls
+                autoPlay
+                className="w-full h-full mt-10 shadow-lg rounded-xl"
+              >
+                <source src={vid1} type="video/mp4" />
+              </video>
+            </div>
+
+            <div className="mt-5 shadow-lg rounded-xl">
+              <p className="text-teal-500 text-center py-1">3.Knorr</p>
+              <video
+                controls
+                className="w-full h-full mt-10 shadow-lg rounded-xl"
+              >
+                <source src={vid1} type="video/mp4" />
+              </video>
+            </div>
+
+            {/* {fourth section} */}
+
+            <h2 className="text-gray-500 text-2xl mt-10 text-center">
+              Comedy Skits
+            </h2>
+
+            <div className="mt-5 shadow-lg rounded-xl">
+              <p className="text-teal-500 text-center py-1">
+                1.When you find your girl ..
+              </p>
+              <video
+                controls
+                className="w-full h-full mt-10 shadow-lg rounded-xl"
+              >
+                <source src={vid1} type="video/mp4" />
+              </video>
+            </div>
+
+            <div className="mt-5 shadow-lg rounded-xl">
+              <p className="text-teal-500 text-center py-1">
+                2. When you find your girl ..
+              </p>
+
+              <video
+                controls
+                autoPlay
+                className="w-full h-full mt-10 shadow-lg rounded-xl"
+              >
+                <source src={vid1} type="video/mp4" />
+              </video>
+            </div>
+
+            <div className="mt-5 shadow-lg rounded-xl">
+              <p className="text-teal-500 text-center py-1">
+                3.When you find your girl ..
+              </p>
+              <video
+                controls
+                className="w-full h-full mt-10 shadow-lg rounded-xl"
+              >
+                <source src={vid1} type="video/mp4" />
+              </video>
+            </div>
           </div>
-
         </section>
       </main>
     </div>
