@@ -1,10 +1,13 @@
 import Head from "next/head";
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import {
-  AiFillTwitterCircle,
   AiFillInstagram,
+  AiFillMail,
+  AiFillPhone,
   AiFillYoutube,
 } from "react-icons/ai";
+
+import { RiWhatsappFill } from "react-icons/ri";
 import Image from "next/image";
 import kimanipic from "../public/kimani.png";
 import design from "../public/design.png";
@@ -31,7 +34,7 @@ export default function Home() {
                   className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md"
                   href="/about"
                 >
-                  About
+                  Porfolio
                 </a>
               </li>
             </ul>
@@ -48,19 +51,49 @@ export default function Home() {
           <div className="flex justify-center mt-10 text-gray-500 ">
             <ul className="flex items-center space-x-5">
               <li>
-                <a href="https://twitter.com/GeorgeKimani_">
-                  <AiFillTwitterCircle className="cursor-pointer text-3xl" />
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://instagram.com/georgekimani_?igshid=YmMyMTA2M2Y="
+                >
+                  <AiFillInstagram className="cursor-pointer text-3xl" />
                 </a>
               </li>
               <li>
-                <a href="https://www.instagram.com/georgekimani_/?hl=en">
-                  <AiFillInstagram className="cursor-pointer text-3xl" />
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://wa.me/254714466144 "
+                >
+                  <RiWhatsappFill className="cursor-pointer text-3xl" />
                 </a>
               </li>
 
               <li>
-                <a href="https://www.instagram.com/georgekimani_/?hl=en">
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://www.instagram.com/georgekimani_/?hl=en"
+                >
                   <AiFillYoutube className="cursor-pointer text-3xl" />
+                </a>
+              </li>
+              <li>
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="mailto: gnkimani93@gmail.com"
+                >
+                  <AiFillMail className="cursor-pointer text-3xl" />
+                </a>
+              </li>
+              <li>
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="tel:0714466144"
+                >
+                  <AiFillPhone className="cursor-pointer text-3xl" />
                 </a>
               </li>
             </ul>
@@ -159,6 +192,7 @@ export default function Home() {
               <p className="text-teal-500 text-center py-1">1.Synix</p>
               <video
                 controls
+                autoPlay
                 className="w-full h-full mt-10 shadow-lg rounded-xl"
               >
                 <source src={vid1} type="video/mp4" />
@@ -169,7 +203,6 @@ export default function Home() {
               <p className="text-teal-500 text-center py-1">2.Gordons Gin</p>
               <video
                 controls
-                autoPlay
                 className="w-full h-full mt-10 shadow-lg rounded-xl"
               >
                 <source src={vid1} type="video/mp4" />
@@ -211,7 +244,6 @@ export default function Home() {
 
               <video
                 controls
-                autoPlay
                 className="w-full h-full mt-10 shadow-lg rounded-xl"
               >
                 <source src={vid1} type="video/mp4" />
@@ -231,6 +263,8 @@ export default function Home() {
             </div>
           </div>
         </section>
+
+        {/* {fifth section} */}
       </main>
     </div>
   );
