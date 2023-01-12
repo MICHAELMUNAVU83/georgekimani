@@ -78,7 +78,21 @@ export default function Home() {
 
         {/* bunm, */}
 
-        <section></section>
+        <section>
+          <div>
+            <h3 className="text-3xl py-1">Services I Offer</h3>
+            <p className="text-gray-500 text-md leading-8">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+              <span className="text-teal-500">quod, voluptatum </span>
+              lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+              <span className="text-teal-500">quod, voluptatum </span>
+            </p>
+
+            <p className="text-gray-500 py-2 text-md leading-8">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+            </p>
+          </div>
+        </section>
       </main>
     </div>
   );
