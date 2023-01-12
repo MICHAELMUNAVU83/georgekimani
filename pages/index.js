@@ -67,9 +67,18 @@ export default function Home() {
           </div>
 
           <div className="flex justify-center relative bg-gradient-to-b  from-teal-500 overflow-hidden rounded-full w-80 h-80 mt-10">
-            <Image src={kimanipic} alt="kimani" layout="fill"  objectFit="cover" />
+            <Image
+              src={kimanipic}
+              alt="kimani"
+              layout="fill"
+              objectFit="cover"
+            />
           </div>
         </section>
+
+        {/* bunm, */}
+
+        <section></section>
       </main>
     </div>
   );
