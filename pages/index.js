@@ -6,6 +6,7 @@ import {
   AiFillPhone,
   AiFillYoutube,
 } from "react-icons/ai";
+import { useState } from "react";
 
 import { RiWhatsappFill } from "react-icons/ri";
 import Image from "next/image";
@@ -14,20 +15,26 @@ import design from "../public/design.png";
 import vid1 from "../public/synix.mp4";
 
 export default function Home() {
+  const [darkMode, setDarkMode] = useState(false);
   return (
-    <div>
+    <div className={darkMode ? "" : ""}>
       <Head>
         <title>George Kimani Porfolio</title>
         <meta name="description" content="George Kimani Porfolio" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="bg-white px-10">
+      <main className="px-10 {darkMode ? 'bg-gray-900' : 'bg-gray-100'}">
         <section className=" min-h-screen ">
           <nav className="py-10 mb-12 flex justify-between">
-            <h1 className="text-xl  font-burtons">George Kimani</h1>
+            <h1 className="text-xl  font-burtons text-light">George Kimani</h1>
             <ul className="flex items-center space-x-10">
               <li>
-                <BsFillMoonStarsFill className="cursor-pointer text-xl" />
+                <BsFillMoonStarsFill
+                  className="cursor-pointer text-xl"
+                  onClick={() => {
+                    setDarkMode(!darkMode);
+                  }}
+                />
               </li>
               <li>
                 <a
@@ -192,7 +199,6 @@ export default function Home() {
               <p className="text-teal-500 text-center py-1">1.Synix</p>
               <video
                 controls
-                autoPlay
                 className="w-full h-full mt-10 shadow-lg rounded-xl"
               >
                 <source src={vid1} type="video/mp4" />
