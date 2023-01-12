@@ -80,7 +80,7 @@ export default function Home() {
           </div>
         </section>
 
-        {/* bunm, */}
+        {/* { second section} */}
 
         <section>
           <div>
@@ -149,6 +149,16 @@ export default function Home() {
               <p className="text-gray-800 py-1 "> Twitter</p>
             </div>
           </div>
+        </section>
+        {/* {third section} */}
+
+        <section>
+          <div>
+            <h3 className="text-3xl py-1">My Work</h3>
+
+
+          </div>
+
         </section>
       </main>
     </div>
