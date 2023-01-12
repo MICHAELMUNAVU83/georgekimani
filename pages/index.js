@@ -8,6 +8,10 @@ import {
 } from "react-icons/ai";
 import Image from "next/image";
 import kimanipic from "../public/kimani.png";
+import design from "../public/design.png";
+import code from "../public/code.png";
+import consulting from "../public/consulting.png";
+
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
@@ -91,6 +95,59 @@ export default function Home() {
             <p className="text-gray-500 py-2 text-md leading-8">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
             </p>
+          </div>
+
+          <div>
+            <div className="text-center shadow-lg p-10 rounded-xl my-10 ">
+              <div className="flex justify-center">
+                <Image src={design} alt="design" width={100} height={100} />
+              </div>
+              <h3 className="text-xl">Beautiful Design</h3>
+              <p className="text-gray-500 text-md leading-8">
+                Lorem ipsum dolor sit amet
+                <span className="text-teal-500">quod, voluptatum </span>
+                consectetur adipisicing elit. Quisquam
+              </p>
+              <h4 className="py-2 text-teal-600">Brands I have worked for</h4>
+
+              <p className="text-gray-800 py-1 "> Google</p>
+              <p className="text-gray-800 py-1 "> Facebook</p>
+              <p className="text-gray-800 py-1 "> Twitter</p>
+            </div>
+
+            <div className="text-center shadow-lg p-10 rounded-xl my-10 ">
+              <div className="flex justify-center">
+                <Image src={design} alt="design" width={100} height={100} />
+              </div>
+              <h3 className="text-xl">Beautiful Design</h3>
+              <p className="text-gray-500 text-md leading-8">
+                Lorem ipsum dolor sit amet
+                <span className="text-teal-500">quod, voluptatum </span>
+                consectetur adipisicing elit. Quisquam
+              </p>
+              <h4 className="py-2 text-teal-600">Brands I have worked for</h4>
+
+              <p className="text-gray-800 py-1 "> Google</p>
+              <p className="text-gray-800 py-1 "> Facebook</p>
+              <p className="text-gray-800 py-1 "> Twitter</p>
+            </div>
+
+            <div className="text-center shadow-lg p-10 rounded-xl my-10 ">
+              <div className="flex justify-center">
+                <Image src={design} alt="design" width={100} height={100} />
+              </div>
+              <h3 className="text-xl">Beautiful Design</h3>
+              <p className="text-gray-500 text-md leading-8">
+                Lorem ipsum dolor sit amet
+                <span className="text-teal-500">quod, voluptatum </span>
+                consectetur adipisicing elit. Quisquam
+              </p>
+              <h4 className="py-2 text-teal-600">Brands I have worked for</h4>
+
+              <p className="text-gray-800 py-1 "> Google</p>
+              <p className="text-gray-800 py-1 "> Facebook</p>
+              <p className="text-gray-800 py-1 "> Twitter</p>
+            </div>
           </div>
         </section>
       </main>
