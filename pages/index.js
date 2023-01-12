@@ -14,6 +14,11 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
+
+        <section className="bg-blue-700 h-screen min-h-screen ">
+          ygbnm
+
+        </section>
       
       </main>
     </div>
